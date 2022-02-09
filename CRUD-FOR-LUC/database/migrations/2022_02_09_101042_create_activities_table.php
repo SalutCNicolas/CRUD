@@ -21,6 +21,7 @@ class CreateActivitiesTable extends Migration
             $table->string('name');
             $table->integer('nbStars');
             $table->integer('price');
+            $table->string('cover')
             $table->timestamps();
             
         });

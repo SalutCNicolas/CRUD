@@ -71,7 +71,7 @@ class ActivitiesController extends Controller
     public function update($id, Request $request)
     {
         $activities = Activities::FindorFail($id);
-        $activities->fill($request->only(['author', 'description', 'duration', 'name','nbStars','price']));
+        $activities->fill($request->only(['author', 'description', 'duration', 'name','nbStars','price','cover']));
         $activities->save();
     }
 
